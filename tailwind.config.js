@@ -6,7 +6,12 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        caveat: ['"Caveat"', 'cursive'],
+        oswald: ['"Oswald"', 'sans-serif'],
+      },
+    },
   },
   
 }

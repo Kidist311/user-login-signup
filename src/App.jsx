@@ -1,12 +1,13 @@
 import './App.css';
 import Login from './pages/Login';
 
-
+// <Login />
 function App() {
  return (
-  <div>
-    <Login />
-  </div>
+  
+        <Login />
+        
+     
  );
 }
 //<img src={armorImg} alt="Armor" className="object-cover h-full w-full" />

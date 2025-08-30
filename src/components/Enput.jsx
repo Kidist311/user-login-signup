@@ -3,40 +3,34 @@ import '../App.css';
 //import React, { useState } from 'react';
 function Input({ input, handleChange }){
     return(
-        <div>
+        <div className="space-y-11">
+            
+            <h1 className="font-oswald text-4xl text-neutral-800">Wellcome!</h1>
 
-            <label htmlFor="email" className="">
-                Email:
-            </label>
+            <form className="space-y-4">
+
+
             <input 
             type="email" 
             name="email"
              placeholder="Enter your email" 
              value={input.email} 
              onChange={handleChange}
+             className="border-2 "
              /><br/>
 
-            <label htmlFor="password" className="">
-                Password:
-            </label>
+
             <input
              type="password" 
              name="password" 
              placeholder="enter ur password" 
              value={input.password} 
              onChange={handleChange} 
+             className="border-2"
              /> <br/>
 
-            <label htmlFor="confirmPassword" className="">
-                ConfirmPassword:
-            </label>
-            <input 
-            type="text" 
-            name="confirmPassword" 
-            placeholder="confirm" 
-            value={input.confirmPassword} 
-            onChange={handleChange}
-            />
+
+            </form>
         </div>
     );
 }
